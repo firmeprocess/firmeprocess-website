@@ -1,17 +1,25 @@
-# tweetable-mathart-flask
+# FIRMEProcess Website
 
-A quick and dirty flask project that uses [tweetable-mathart-python]() to show basics of web dev.
+The homesite for Firme Process. [Visit it here](http://www.firmeprocess.org).
 
-## Goals
-These are some of the goals. Order is subject to change.
+## Deets
+This is a [flask](flask.pocoo.org) site, currently hosted on [heroku](https://www.heroku.com) for alpha and staging.
 
-1) Show HTML Templating and Rendering
+## Download and work on it locally
+You'll need [git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [pip](https://pip.pypa.io/en/latest/installing.html), and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org/en/latest/install.html) installed before starting.
 
-2) Show Class Based Views
+Once these are installed, it's easy.
 
-3) URL Routing
+    $ git clone git@github.com:firmeprocess/firmeprocess-website.git
+    $ cd firmeprocess-website
+    $ mkvirtualenv firme
+    $ pip install -r requirements
+    $ echo ENVIRONMENT=LOCAL >> .env
 
-4) Forms & Validation
+And you're ready. Run locally using:
 
-5) User instagram/twitter APIs to post on app's behalf.
+    $ foreman start
+
+Then you're good to go.
+
 
