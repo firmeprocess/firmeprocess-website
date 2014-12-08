@@ -1,0 +1,43 @@
+html,
+body,
+#outermost-container {
+  padding: 0;
+  margin: 0;
+  background-color: #f3f3f3; }
+
+#outermost-container {
+  min-height: 100%;
+  background: url("http://i.imgur.com/KCa8KHY.png");
+  z-index: 0; }
+
+#navbar-main {
+  min-width: 100%;
+  background-color: #5C493D;
+  border: none;
+  border-radius: 0; }
+  #navbar-main #navbar-internal {
+    max-width: 1220px; }
+    #navbar-main #navbar-internal a {
+      color: white; }
+
+.footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: primary; }
+  .footer #social-footer {
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: primary;
+    border: 1px solid primary;
+    height: 90%; }
+    .footer #social-footer #social-link:hover span {
+      color: primary;
+      border-bottom: 2px dashed primary;
+      border-bottom-width: 30%; }
+
+/*# sourceMappingURL=common.css.map */
