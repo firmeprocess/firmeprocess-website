@@ -22,24 +22,24 @@ def home():
     return render_template('index.html', message="Welcome to *")
 
 
-### SIGNUP ###
-@app.route('/profile')
-def signup():
-    return render_template('signup.html')
+### Projects ###
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
 
 
 ### PROFILE ###
 
-@app.route('/profile')
-def profile():
-    return render_template('profile.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 ### ABOUT ###
 
-@app.route('/about')
-def about():
-    return render_template('profile.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 ### MATHART ###
