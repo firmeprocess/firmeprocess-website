@@ -42,17 +42,15 @@ def contact():
     return render_template('contact.html')
 
 
-### MATHART ###
+### INFOGRAPHICS ###
 
-@app.route('/mathart')
-def mathart():
-    return render_template('mathart/mathart.html', message="Welcome to *")
+@app.route('/infographics')
+def infographics():
+    return render_template('infographics/infographics.html')
 
-@app.route('/mathart/twitter')
-def mathart_twitter():
-    return render_template('mathart/mathart_twitter.html', message="Welcome to *")
 
-@app.route('/mathart/instagram')
-def mathart_instagram():
-    return render_template('mathart/mathart_instagram.html', message="Welcome to *")
+@app.route('/infographics/daca')
+def daca2014():
+    return render_template('infographics/daca2014.html')
+
 

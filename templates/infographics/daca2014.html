@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block page_title %}DACA 2014{% endblock page_title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href='/static/styles/css/infographics/daca2014.css' type='text/css'>
+{% endblock extra_css %}
+
+{% block body %}
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+<div class="section"></div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+{% block end_scripts %}
+<script>
+    $('div.section').each(function(){
+        var color = '#'+Math.floor(Math.random()*16777215).toString(16)
+        $(this).css('background-color', color);
+        console.log('#'+Math.floor(Math.random()*16777215).toString(16));
+    })
+</script>
+{% endblock end_scripts %}
+
+
+{% endblock body %}
+
